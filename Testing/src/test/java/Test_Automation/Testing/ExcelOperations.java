@@ -18,16 +18,16 @@ public static void main(String[] args) throws IOException {
 		FileInputStream fileloc = new FileInputStream(".\\Test-data\\Automate.xlsx");
 		XSSFWorkbook wbook = new XSSFWorkbook(fileloc);
 		XSSFSheet wsheet = wbook.getSheetAt(0);
-		int lastrownumber = wsheet.getLastRowNum();
+		//int lastrownumber = wsheet.getLastRowNum();
 		
 		XSSFRow wrow = wsheet.getRow(1);
-		int lastcellnumber = wrow.getLastCellNum();
-		/*XSSFCell wcell = wrow.getCell(0);
+		//int lastcellnumber = wrow.getLastCellNum();
+		XSSFCell wcell = wrow.getCell(0);
 		wcell.setCellType(CellType.STRING);
 		String value = wcell.getStringCellValue();
 		System.out.println(value);
 		wbook.close();
-		*/
+		
 		/*for(int i =1; i <=2; i++) {
 			XSSFRow r1 = wsheet.getRow(i);
 			for (int j = 0; j<=2; j++) {
